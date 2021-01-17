@@ -1,7 +1,5 @@
 package by.kasyan.belarusbankBotTest.processor;
 
-
-
 import by.kasyan.belarusbankBotTest.commands.BotCommand;
 import by.kasyan.belarusbankBotTest.commands.headmenu.*;
 import by.kasyan.belarusbankBotTest.dto.MyResponse;
@@ -30,24 +28,8 @@ public class UpdateDispatcher {
         switch (command) {
             case START:
                 return new MyResponse(chatId, new StartBots());
-            case MENU:
-                return new MyResponse(chatId, new MenuBot());
-            case HELLO:
-                return new MyResponse(chatId, new Hello());
             case NEWS:
                 return new MyResponse(chatId, new NewsAll());
-            case BYE:
-                return new MyResponse(chatId, new ByeBye());
-            case OPEN_MOODLE:
-                return new MyResponse(chatId, new MoodleShool());
-            case SHOW_POGODA:
-                return new MyResponse(chatId, new ShowPogoda());
-            case GAMES:
-                return new MyResponse(chatId, new GamesOnline());
-            case MUSIC:
-                return new MyResponse(chatId, new MusicOnline());
-            case VIDEO:
-                return new MyResponse(chatId, new VideoOnline());
                 case NONE:
             default:
                 return new MyResponse(chatId, new NotSupported());

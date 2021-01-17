@@ -7,16 +7,7 @@ public class NewsAll extends CommandProcessor {
     @Override
     public String getResponse() {
 
-        return "Новости Беларуси:" +
-                "\n - TUT.by" +
-                "\n - Onliner.by" +
-                "\n - Belta.by" +
-                "\nНовости мира:" +
-                "\n - Reuturs.com" +
-                "\n - EuroNews.com" +
-                "\nДругие новостные порталы:" +
-                "\n - vsesmi.online" +
-                "\nВозврат в общее меню /menu";
+        return "https://belarusbank.by/ru/33139/press/bank_news";
 
     }
 }

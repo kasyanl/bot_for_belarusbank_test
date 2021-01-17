@@ -4,14 +4,14 @@ public enum BotCommand {
 
     START("/start", "Старт"),
     HELLO("/hello", "Приветствие"),
-    MENU("/menu", "Вывести меню"),
+   // MENU("/menu", "Вывести меню"),
     NEWS("/news", "Новости"),
-    OPEN_MOODLE("/moodle", "Начать обучаться Java"),
-    SHOW_POGODA("/pogoda", "Прогноз на неделю"),
-    VIDEO("/video","осмотреть видосики"),
-    MUSIC("/music", "Послушать музыку"),
-    GAMES("/games", "Поиграть в игры"),
-    BYE("/bye", "Прощанье"),
+    CURSES("/curses", "Актуальные курсы валют"),
+//    SHOW_POGODA("/pogoda", "Прогноз на неделю"),
+//    VIDEO("/video","осмотреть видосики"),
+//    MUSIC("/music", "Послушать музыку"),
+//    GAMES("/games", "Поиграть в игры"),
+//    BYE("/bye", "Прощанье"),
     NONE("", "");
 
     final String command;
@@ -36,22 +36,8 @@ public enum BotCommand {
                 return START;
             case "/hello":
                 return HELLO;
-            case "/bye":
-                return BYE;
-            case "/moodle":
-                return OPEN_MOODLE;
-            case "/pogoda":
-                return SHOW_POGODA;
             case "/news":
                 return NEWS;
-            case "/menu":
-                return MENU;
-            case "/video":
-                return VIDEO;
-            case "/music":
-                return MUSIC;
-            case "/games":
-                return GAMES;
             default:
                 return NONE;
         }

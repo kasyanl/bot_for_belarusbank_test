@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class KasyanlRpa6Bot extends TelegramLongPollingBot {
+public class BelarusbankBot extends TelegramLongPollingBot {
 
     UpdateDispatcher updateDispatcher = new UpdateDispatcher();
 
@@ -53,25 +53,11 @@ public class KasyanlRpa6Bot extends TelegramLongPollingBot {
         // Первая строчка клавиатуры
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         // Добавляем кнопки в первую строчку клавиатуры
-        keyboardFirstRow.add("/video");
-        keyboardFirstRow.add("/music");
-
-        // Вторая строчка клавиатуры
-        KeyboardRow keyboardSecondRow = new KeyboardRow();
-        // Добавляем кнопки во вторую строчку клавиатуры
-        keyboardSecondRow.add("/news");
-        keyboardSecondRow.add("/pogoda");
-
-        // третья строчка клавиатуры
-        KeyboardRow keyboardTryRow = new KeyboardRow();
-        // Добавляем кнопки во вторую строчку клавиатуры
-        keyboardTryRow.add("/games");
-        keyboardTryRow.add("/moodle");
+        keyboardFirstRow.add("/news");
+        keyboardFirstRow.add("/curses");
 
         // Добавляем все строчки клавиатуры в список
         keyboard.add(keyboardFirstRow);
-        keyboard.add(keyboardSecondRow);
-        keyboard.add(keyboardTryRow);
         // и устанваливаем этот список нашей клавиатуре
         replyKeyboardMarkup.setKeyboard(keyboard);
 
