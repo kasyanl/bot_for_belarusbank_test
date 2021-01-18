@@ -1,7 +1,7 @@
-package by.kasyan.belarusbankBotTest.commands.headmenu;
+package by.kasyan.belarusbank_bot_test.commands.headmenu;
 
-import by.kasyan.belarusbankBotTest.commands.BotCommand;
-import by.kasyan.belarusbankBotTest.commands.CommandProcessor;
+import by.kasyan.belarusbank_bot_test.commands.BotCommand;
+import by.kasyan.belarusbank_bot_test.commands.CommandProcessor;
 
 public class MenuBot extends CommandProcessor {
     @Override

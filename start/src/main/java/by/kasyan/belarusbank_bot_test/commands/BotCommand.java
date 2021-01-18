@@ -1,10 +1,10 @@
-package by.kasyan.belarusbankBotTest.commands;
+package by.kasyan.belarusbank_bot_test.commands;
 
 public enum BotCommand {
 
     START("/start", "Старт"),
     HELLO("/hello", "Приветствие"),
-   // MENU("/menu", "Вывести меню"),
+    CURSES_MINSK("/minskbank", "Курсы банков г.Минска"),
     NEWS("/news", "Новости"),
     CURSES("/curses", "Актуальные курсы валют"),
 //    SHOW_POGODA("/pogoda", "Прогноз на неделю"),
@@ -38,6 +38,10 @@ public enum BotCommand {
                 return HELLO;
             case "/news":
                 return NEWS;
+            case "/curses":
+                return CURSES;
+            case "/minskbank":
+                return CURSES_MINSK;
             default:
                 return NONE;
         }

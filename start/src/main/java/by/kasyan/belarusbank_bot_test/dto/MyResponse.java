@@ -1,6 +1,6 @@
-package by.kasyan.belarusbankBotTest.dto;
+package by.kasyan.belarusbank_bot_test.dto;
 
-import by.kasyan.belarusbankBotTest.commands.CommandProcessor;
+import by.kasyan.belarusbank_bot_test.commands.CommandProcessor;
 
 public class MyResponse {
 

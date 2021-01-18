@@ -1,7 +1,7 @@
-package by.kasyan.belarusbankBotTest.processor;
+package by.kasyan.belarusbank_bot_test.processor;
 
 
-import by.kasyan.belarusbankBotTest.dto.MyResponse;
+import by.kasyan.belarusbank_bot_test.dto.MyResponse;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

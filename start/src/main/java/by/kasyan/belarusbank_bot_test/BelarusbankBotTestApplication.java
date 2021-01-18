@@ -1,10 +1,12 @@
-package by.kasyan.belarusbankBotTest;
+package by.kasyan.belarusbank_bot_test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.telegram.telegrambots.ApiContextInitializer;
 
 @SpringBootApplication
+@EnableFeignClients
 public class BelarusbankBotTestApplication {
 
 	public static void main(String[] args) {

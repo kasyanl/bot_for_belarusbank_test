@@ -1,4 +1,4 @@
-package by.kasyan.belarusbankBotTest.commands;
+package by.kasyan.belarusbank_bot_test.commands;
 
 public abstract class CommandProcessor {
 
